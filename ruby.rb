@@ -39,7 +39,9 @@ def add(num1, num2)
 end
 
 def whats_your_name(name)
-  "my name is #{name}"
+  puts 'what is your name'
+  name = gets.chomp
+  "Hello, nice to meet you #{name}"
 end
 
 

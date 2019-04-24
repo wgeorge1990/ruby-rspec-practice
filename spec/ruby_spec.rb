@@ -8,6 +8,6 @@ end
 
 describe 'whats_your_name' do
     it "returns the name that was imput" do
-        expect(whats_your_name('william')).to eq('my name is william')
+        expect(whats_your_name(name = gets.chomp)).to eq("Hello, nice to meet you #{name}")
     end
 end
