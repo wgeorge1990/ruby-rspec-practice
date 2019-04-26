@@ -1,3 +1,4 @@
+require 'pry'
 
   def whats
   puts "what is going on"
@@ -62,10 +63,33 @@ def weather_ternary(condition, temperature)
  puts response
  puts "Maybe a bike ride would be ideal" if response == "It is a great day to get outside. " 
  puts "We could go see a movie today?" unless response == "It is a great day to get outside. "
+ #binding.pry
 end
 
 weather_ternary('sunny', 'warm')
 weather_ternary('rainy', 'warm')
+
+#this would be better suited as a case statment to make room for more spcific responses to differnt weather and condition cases.
+def what_to_do
+  puts 'please type the weather here:'
+  weather = gets.chomp
+case weather
+when "sunny"
+  puts "lets go outside"
+when "rainy"
+  puts 'lets go to a movie'
+when "cold"
+  puts 'lets build a fire'
+when 'windy'
+  puts 'lets fly a kite'
+else
+  puts 'I havent programmed that condidtion yet, what do you suggest me do?'
+    response = gets.chomp
+    puts "okay lets #{response}"
+  end
+end
+
+what_to_do
 
 
 
