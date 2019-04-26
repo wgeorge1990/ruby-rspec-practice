@@ -61,7 +61,7 @@ def weather_ternary(condition, temperature)
  "It is a great day to get outside. " : response = "Maybe it'll be nicer tomorrow"
  puts response
  puts "Maybe a bike ride would be ideal" if response == "It is a great day to get outside. " 
- puts "We could go see a movie today?" if response == "Maybe it'll be nicer tomorrow"
+ puts "We could go see a movie today?" unless response == "It is a great day to get outside. "
 end
 
 weather_ternary('sunny', 'warm')
