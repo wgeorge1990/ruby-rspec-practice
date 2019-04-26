@@ -108,6 +108,41 @@ end
 
 #what_to_do
 
+def basic_loop
+  counter = 0
+  loop do 
+   # counter = counter + 1
+   #below uses add-and-assignment
+   counter += 1
+    puts counter
+    if counter >= 5
+      break
+    end
+  end
+end
+
+basic_loop
+
+#using times loop
+def times_loop
+  count = 0
+  5.times do 
+    count += 1
+    puts count
+  end
+end
+
+times_loop
+
+def while_loop
+  counter = 0
+  while counter <= 6
+    puts counter
+    counter += 1
+  end
+  puts 'okay so now the loop is done'
+end
+while_loop
 
 
 
