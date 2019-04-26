@@ -4,18 +4,26 @@ require 'pry'
   puts "what is going on"
   end
 
+  #whats
+
   def time
     puts Time.now
   end
+
+  #time
 
   def greeting(name)
     puts "hello my name is #{name}"
   end
 
+  #greeting('william')
+
   def mutiply(num1, num2)
     puts num1 * num2
     return num1 * num2 * 2
   end
+
+  #multiply(16, 19)
 
   def welcome
       puts 'hey whats your name'
@@ -33,6 +41,8 @@ require 'pry'
     end
   end
 
+  #welcome
+
   def add(num1, num2)
     num1 + num2
   end
@@ -42,6 +52,8 @@ require 'pry'
     name = gets.chomp
     "Hello, nice to meet you #{name}"
   end
+
+  #whats_your_name('william')
   
     def fizzbuzz(num)
       if num % 3 == 0 && num % 5 == 0
@@ -57,6 +69,11 @@ require 'pry'
   end
 end
 
+#fizbuzz(15)
+#fizbuzz(3)
+#fizbuzz(5)
+#fizbuzz(27)
+
 def weather_ternary(condition, temperature)
   condition == 'sunny' && temperature == 'warm' ? response =
  "It is a great day to get outside. " : response = "Maybe it'll be nicer tomorrow"
@@ -66,8 +83,8 @@ def weather_ternary(condition, temperature)
  #binding.pry
 end
 
-weather_ternary('sunny', 'warm')
-weather_ternary('rainy', 'warm')
+#weather_ternary('sunny', 'warm')
+#weather_ternary('rainy', 'warm')
 
 #this would be better suited as a case statment to make room for more spcific responses to differnt weather and condition cases.
 def what_to_do
@@ -89,7 +106,7 @@ else
   end
 end
 
-what_to_do
+#what_to_do
 
 
 
