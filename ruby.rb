@@ -56,6 +56,14 @@
   end
 end
 
+def weather_ternary(condition, temperature)
+  condition == 'sunny' && temperature == 'warm' ? response =
+ "It is a great day to get outside" : response = "Maybe it'll be nicer tomorrow"
+ puts response
+end
+
+weather_ternary('sunny', 'warm')
+
 
 
 
