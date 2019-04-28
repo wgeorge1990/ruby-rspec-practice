@@ -121,7 +121,7 @@ def basic_loop
   end
 end
 
-basic_loop
+#basic_loop
 
 #using times loop
 def times_loop
@@ -132,7 +132,7 @@ def times_loop
   end
 end
 
-times_loop
+#times_loop
 
 def while_loop
   counter = 0
@@ -142,9 +142,36 @@ def while_loop
   end
   puts 'okay so now the loop is done'
 end
-while_loop
+#while_loop
+def array
+array = ['one', 'two', 'three', 'four', 'five']
+binding.pry
+end
 
+def learn_yield(wordone, wordtwo)
+  yield(wordone, wordtwo)
+end
+#learn_yield(1, 2) { |wordone, wordtwo| puts "wordone is #{wordone} and word two is "}
 
+class Bird
+  def fly(name)
+    puts "im a bird named #{name} and im flying"
+  end
+ 
+end
 
+feather = Bird.new
+puts feather.fly('feather')
 
+#replace all instances
+def gsub(string, replace, replacement)
+  puts  string.gsub(/["#{replace}"]/, replacement)
+end
 
+#replace first instance
+def sub(string, replace, replacement)
+  puts  string.gsub(/["#{replace}"]/, replacement)
+end
+
+# gsub('this is the test string', "s", "z")
+# sub('this is the test string', "s", "z")
