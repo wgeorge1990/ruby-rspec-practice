@@ -64,8 +64,6 @@ require 'pry'
       else
         return nil
       end
-    end
-  end
 end
 
 #fizbuzz(15)
@@ -152,15 +150,6 @@ def learn_yield(wordone, wordtwo)
 end
 #learn_yield(1, 2) { |wordone, wordtwo| puts "wordone is #{wordone} and word two is "}
 
-class Bird
-  def fly(name)
-    puts "im a bird named #{name} and im flying"
-  end
- 
-end
-
-feather = Bird.new
-puts feather.fly('feather')
 
 #replace all instances
 def global_sub(string, replace, replacement)
@@ -178,3 +167,55 @@ end
 
 # gsub('this is the test string', "s", "z")
 # sub('this is the test string', "s", "z")
+
+#itterations
+
+def itterations
+  a = ["bear", "lion", "tiger", "lizard"]
+  a.collect do |animal|
+    print animal.concat('s')
+  end
+  puts a
+end
+
+#for loop
+def array_copy(source)
+  destination = []
+  for i in source
+    if i < 4
+      destination.push(i)
+    end
+  end
+  return destination
+end
+
+#each loop
+def array_copy(source)
+  destination = []
+  source.each do |x| 
+    if x < 4
+      destination.push(x)
+    else
+      nil
+    end
+  end
+  return destination
+end
+
+#Classes
+
+class Bird
+  def initialize(name, color, favorite_berry)
+    @name = name
+    @color = color
+    @favorite_berry = favorite_berry
+  end
+
+  def say_my_name
+    puts "Hi, im a bird named #{@name}. I like to fly in the sky and eat #{@favorite_berry}."
+  end
+ 
+end
+
+feather = Bird.new('feather', 'green', 'blackberries')
+puts feather.say_my_name
