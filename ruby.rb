@@ -26,19 +26,18 @@ require 'pry'
   #multiply(16, 19)
 
   def welcome
-      puts 'hey whats your name'
+        puts 'hey whats your name'
       name = gets.chomp
-      puts "nice to meet you #{name}, what would you like to do next?"
-      puts "sing song or do dance?"
+        puts "nice to meet you #{name}, what would you like to do next?"
+        puts "sing song or do dance?"
       answer = gets.chomp
-      if answer == 'sing' 
-        puts 'we are singing yay'
-      elsif answer == 'dance' 
-        puts 'we are dancing'
-      else
-        puts 'thats not an option'
+        if answer == 'sing' 
+          puts 'we are singing yay'
+        elsif answer == 'dance' 
+          puts 'we are dancing'
+        else
+          puts 'thats not an option'
       end
-    end
   end
 
   #welcome
@@ -58,9 +57,9 @@ require 'pry'
     def fizzbuzz(num)
       if num % 3 == 0 && num % 5 == 0
         return 'FizzBuzz'
-      else if num % 3 == 0
+      elsif num % 3 == 0
         return 'Fizz'
-      else if num % 5 == 0
+      elsif num % 5 == 0
         return 'Buzz'
       else
         return nil
