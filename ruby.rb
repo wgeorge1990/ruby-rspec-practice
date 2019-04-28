@@ -33,7 +33,7 @@ require 'pry'
       answer = gets.chomp
       if answer == 'sing' 
         puts 'we are singing yay'
-      else if answer == 'dance' 
+      elsif answer == 'dance' 
         puts 'we are dancing'
       else
         puts 'thats not an option'
