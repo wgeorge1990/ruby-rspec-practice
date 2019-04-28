@@ -164,13 +164,17 @@ feather = Bird.new
 puts feather.fly('feather')
 
 #replace all instances
-def gsub(string, replace, replacement)
+def global_sub(string, replace, replacement)
   puts  string.gsub(/["#{replace}"]/, replacement)
 end
 
 #replace first instance
-def sub(string, replace, replacement)
+def first_sub(string, replace, replacement)
   puts  string.gsub(/["#{replace}"]/, replacement)
+end
+#replace all capital letters
+def capital_sub(string, replacement)
+  puts  string.gsub(/[A-Z]/, replacement)
 end
 
 # gsub('this is the test string', "s", "z")
