@@ -217,5 +217,22 @@ class Bird
  
 end
 
-feather = Bird.new('feather', 'green', 'blackberries')
-puts feather.say_my_name
+#feather = Bird.new('feather', 'green', 'blackberries')
+#puts feather.say_my_name
+
+def square
+  a = (1...8).to_a
+  puts a
+  b = []
+    a.each do |x|
+      x = x*x
+      b.push(x)
+  end
+    c = a.collect do |x|
+      x * x
+  end
+    print c
+    print a
+    print b
+end
+square
